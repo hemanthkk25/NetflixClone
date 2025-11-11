@@ -7,13 +7,11 @@ import Error from "./pages/ErrorPage/ErrorPage";
 export default function App() {
   return (
     <Router>
-      <div>
         <Routes>
           <Route path="/" element={<NetflixPage />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="*" element={<Error/>}/>
-        </Routes>
-      </div>
+        </Routes>  
     </Router>
   );
 }
